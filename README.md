@@ -4,7 +4,7 @@ This is a solution for conding assessment sent to me by ... - the repo is public
 
 You have different options how to run the program:
 
-1. Use Docker. You will need docker isntalled. Run the docker image from my public dockerhub repo and follow the prompt:
+1. Use Docker. You will need docker as prerequisite. Run the docker image from my public dockerhub repo and follow the prompt:
 ```
 docker run -ti najsladkoto/web-republic
 ```
@@ -15,7 +15,7 @@ docker build -t assessment https://github.com/boyab9184/WR.git#main
 docker run -ti assessment
 ```
 
-3. You will need git, python3 and pip installed. Clone that repo, install requerments and run assessment.py
+3. You will need git, python3 and pip as prerequisites. Clone that repo, install requerments and run assessment.py
 ```
 mkdir assessment-bbenev
 cd assessment-bbenev
