@@ -18,8 +18,8 @@ docker run -ti assessment
 
 3. You will need git, python3 and pip as prerequisites. Clone that github repo, install requirements and run assessment.py
 ```
-mkdir assessment-bbenev
-cd assessment-bbenev
+mkdir Assessment_BBenev
+cd Assessment_BBenev
 git clone https://github.com/boyab9184/WR.git
 cd WR
 pip install -r requirements.txt
