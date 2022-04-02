@@ -15,7 +15,7 @@ docker build -t assessment https://github.com/boyab9184/WR.git#main
 docker run -ti assessment
 ```
 
-3. You will need python3 and pip installed. Clone that repo, install requerments and run assessment.py
+3. You will need git, python3 and pip installed. Clone that repo, install requerments and run assessment.py
 ```
 git clone https://github.com/boyab9184/WR.git
 pip install -r requirements.txt
