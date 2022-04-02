@@ -36,9 +36,9 @@ def half_with_most_transactions_by_sessions(df):
     longer_half_sessions_df = sorted_by_sessions[int(count/2) : ]
 
     if shorter_sessions_half_df['Transactions'].sum() < longer_half_sessions_df['Transactions'].sum():
-        return "The half with LONGER sessions has more transactions\n"
+        return "The half with LONGER sessions generates more transactions\n"
     
-    return "The half with SHORTER sessions has more transactions\n"
+    return "The half with SHORTER sessions generates more transactions\n"
         
 
 
