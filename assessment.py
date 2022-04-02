@@ -79,7 +79,6 @@ while True:
     user_choice = int (input("Enter your Choice:"))
 
     if user_choice == 1:
-    
        print ('\nThis is: ',are_all_client_ids_unique(data_frame))
 
     elif user_choice == 2:
