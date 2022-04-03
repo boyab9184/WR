@@ -30,7 +30,7 @@ def revenue_with_less_than_num_sesions(df, number):
 
 def half_with_most_transactions_by_sessions(df):
     '''Takes a dataframe, retirning the half(sorted by sessions) of the most transactions, prints info'''
-    sorted_by_sessions = df.sort_values(by=['Sessions'])
+    sorted_by_sessions = df.sort_values(by = ['Sessions'])
     count = sorted_by_sessions['Sessions'].count()
     shorter_sessions_half_df = sorted_by_sessions[ : int(count/2)]
     longer_half_sessions_df = sorted_by_sessions[int(count/2) : ]
@@ -79,11 +79,11 @@ while True:
     user_choice = int (input("Enter your Choice:"))
 
     if user_choice == 1:
-       print ('\nThis is: ',are_all_client_ids_unique(data_frame))
+       print ('\nThis is: ', are_all_client_ids_unique(data_frame))
 
     elif user_choice == 2:
         number = int(input("Enter your NUMBER:")) 
-        print ("The %d most profitable client ids are:\n" %(number),most_profitable_clients(data_frame, number))
+        print ("The %d most profitable client ids are:\n" %(number), most_profitable_clients(data_frame, number))
 
     elif user_choice == 3:
         number = int(input("Enter your NUMBER:")) 
