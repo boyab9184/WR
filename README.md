@@ -10,7 +10,7 @@ Open a terminal and run one of the code blocks below.
 docker run -ti najsladkoto/web-republic
 ```
 
-2. Build a docker image from the Dockerfile in that github repo and than run it:
+2. Build a docker image from the Dockerfile in this github repo and than run it:
 ```
 docker build -t assessment https://github.com/boyab9184/WR.git#main
 docker run -ti assessment
