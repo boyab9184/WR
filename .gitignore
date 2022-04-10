@@ -1,1 +1,7 @@
 /answ.docx
+/data/Test_external_data_cut.csv
+.idea
+.idea
+.DS_Store
+.gitignore
+__pycache__
