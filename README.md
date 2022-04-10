@@ -27,5 +27,5 @@ python3 menu.py
 ```
 4. To run the tests in the same directory run test_assesment.py
 ```
-python3 test_assesment.py
+python3 test_assessment.py
 ```
