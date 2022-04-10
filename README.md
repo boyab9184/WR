@@ -23,5 +23,5 @@ cd Assessment_BBenev
 git clone https://github.com/boyab9184/WR.git
 cd WR
 pip install -r requirements.txt
-python3 assessment.py
+python3 menu.py
 ```
