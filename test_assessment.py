@@ -32,7 +32,7 @@ class TestAssessment(unittest.TestCase):
 
     def test_average_session_duration(self):
         res = ast.avarage_session_duration(ast.data_frame, 100)
-        expected = '0:06:59.940057'
+        expected = '0 days 00:06:59.940056818'
         self.assertEqual(str(res), expected)
 
 
