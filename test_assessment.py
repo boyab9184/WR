@@ -1,5 +1,5 @@
 import unittest
-from pandas.testing import *
+from pandas.testing import assert_series_equal
 
 import assessment as ast
 
@@ -8,7 +8,7 @@ class TestAssessment(unittest.TestCase):
 
     def test_are_all_client_ids_unique(self):
         res = ast.are_all_client_ids_unique(ast.data_frame)
-        self.assertTrue(res, True)
+        self.assertTrue(res)
 
     def test_most_profitable_clients(self):
         res = ast.most_profitable_clients(ast.data_frame, 100)
@@ -17,19 +17,23 @@ class TestAssessment(unittest.TestCase):
 
     def test_half_with_most_transactions_by_sessions(self):
         res = ast.half_with_most_transactions_by_sessions(ast.data_frame)
-        self.assertTrue(res, 'LONGER' in res)
+        expected = 'LONGER' in res
+        self.assertTrue(expected)
 
     def test_revenue_with_less_than_num_sessions(self):
         res = ast.revenue_with_less_than_num_sesions(ast.data_frame, 100)
-        self.assertEqual(res, 3586894.02)
+        expected = 3586894.02
+        self.assertEqual(res, expected)
 
     def test_revenue_with_most_transaction_limited(self):
         res = ast.revenue_with_most_transaction_limited(ast.data_frame, 100)
-        self.assertEqual(res, 278576.01)
+        expected = 278576.01
+        self.assertEqual(res, expected)
 
     def test_average_session_duration(self):
         res = ast.avarage_session_duration(ast.data_frame, 100)
-        self.assertEqual(str(res), '0:06:59.940057')
+        expected = '0:06:59.940057'
+        self.assertEqual(str(res), expected)
 
 
 if __name__ == '__main__':
