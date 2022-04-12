@@ -34,6 +34,11 @@ class TestAssessment(unittest.TestCase):
         res = ast.avarage_session_duration(ast.data_frame, 100)
         expected = '0 days 00:06:59.940056818'
         self.assertEqual(str(res), expected)
+    
+    def test_avarage_bounce_rate(self):
+        res = round (ast.avarage_bounce_rate(ast.data_frame, 100), 2)
+        expected = 11.05
+        self.assertEqual(res, expected)
 
 
 if __name__ == '__main__':
