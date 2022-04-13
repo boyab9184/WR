@@ -27,6 +27,7 @@ def revenue_with_less_than_num_sesions(df, number):
     
 def half_with_most_transactions_by_sessions(df):
     '''Takes a dataframe, retirning the half(sorted by sessions) of the most transactions, prints info'''
+    
     df_sorted_by_sessions = df.sort_values(by = ['Sessions'])
     count = df_sorted_by_sessions['Sessions'].count()
     df_half_with_shorter_sessions = df_sorted_by_sessions[ : count//2]
@@ -59,6 +60,6 @@ def avarage_bounce_rate(df, number):
 
     sub_df = uts.sorted_desc_by_transaction(df, number)
     sub_df['Bounce Rate %'] = sub_df['Bounce Rate'].str.replace('%', '', regex=True).astype(float)
-    sub_df['Single Page Sessions'] = sub_df['Bounce Rate %'] * sub_df['Sessions'] / 100
+    sub_df['Single Page Sessions'] = (sub_df['Bounce Rate %'] * sub_df['Sessions']) / 100
 
     return sub_df['Single Page Sessions'].sum() / sub_df['Sessions'].sum() * 100
